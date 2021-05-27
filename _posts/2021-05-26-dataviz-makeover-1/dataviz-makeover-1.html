@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/img0.jpg","img/img0_LI.jpg","img/img1.PNG","img/img10.PNG","img/img11.PNG","img/img12.PNG","img/img13.PNG","img/img14.PNG","img/img15.PNG","img/img16.PNG","img/img17.PNG","img/img19.PNG","img/img2.PNG","img/img20.PNG","img/img21.PNG","img/img22.PNG","img/img23.PNG","img/img24.PNG","img/img25.PNG","img/img26.PNG","img/img27.PNG","img/img28.PNG","img/img29.png","img/img3.PNG","img/img30.PNG","img/img31.PNG","img/img32.PNG","img/img33.PNG","img/img34.PNG","img/img35.PNG","img/img4.PNG","img/img5.PNG","img/img6.PNG","img/img7.PNG","img/img8.PNG","img/img9.PNG"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/img0.jpg","img/img0_LI.jpg","img/img1.PNG","img/img10.PNG","img/img11.PNG","img/img12.PNG","img/img13.PNG","img/img14.PNG","img/img15.PNG","img/img16.PNG","img/img17.PNG","img/img19.PNG","img/img2.PNG","img/img20.PNG","img/img21.PNG","img/img22.PNG","img/img23.PNG","img/img24.PNG","img/img25.PNG","img/img26.PNG","img/img27.PNG","img/img28.PNG","img/img29.png","img/img3.PNG","img/img30.PNG","img/img31.PNG","img/img32.PNG","img/img33.PNG","img/img34.PNG","img/img35.PNG","img/img36.PNG","img/img37.jpg","img/img38.jpg","img/img39.jpg","img/img4.PNG","img/img40.jpg","img/img5.PNG","img/img6.PNG","img/img7.PNG","img/img8.PNG","img/img9.PNG"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1484,6 +1484,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ol type="1">
 <li><p>The title of the graph does not convey the intent of the graph well.</p>
 <ul>
+<li>The title indicates that it is the import and export value of six countries, but HongKong and Taiwan are not conutries.</li>
 <li>In this case, the graph is trying to show changes in import and export amounts over time for six trading countries and compare them.</li>
 <li>‘Top’ included in the header, but ranking the total imports and exports in the source data(from 2019 to 2020), not exactly these six countries.</li>
 <li>The title does not indicate the unit of calculation of the import and export amount.</li>
@@ -1508,20 +1509,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="img/img0_LI.jpg" /></p>
 <h3 id="clarity-1">2.1 Clarity</h3>
 <ol type="1">
+<li>Replace countries with regions in the title.</li>
 <li>Delete the ‘top’ included in the title to avoid spreading the wrong information.</li>
 <li>Title and subtitle show the objectives and explain abbreviations and definitions that will be used in the graph.</li>
 <li>Add a new calculated field ‘Net exports(exports-imports)’ to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.</li>
-<li>Exports, imports, and net exports for the six countries have the same scale on the x-axis separately, making it easy to compare the data for the six countries.</li>
-<li>The units of the y-axis are uniform. All six countries use the data from Jan 2019 to Dec 2020.</li>
+<li>Exports, imports, and net exports for the six regions have the same scale on the x-axis separately, making it easy to compare the data for the six countries.</li>
+<li>The units of the y-axis are uniform. All six regions use the data from Jan 2019 to Dec 2020.</li>
 </ol>
 <h3 id="aesthetic-1">2.2 Aesthetic</h3>
 <ol type="1">
 <li>Annotations are used to emphasize key observations.</li>
-<li>Color is used to bring to attention different categories(different countries, trade surplus and trade deficit)</li>
+<li>Color is used to bring to attention different categories(different regions, trade surplus and trade deficit)</li>
 <li>Add data sources and explanation to help customers to read the graph.</li>
 </ol>
 <h1 id="proposed-visualization">3.0 Proposed Visualization</h1>
-<p>Please view the interactive visualization on Tableau Public here(link–tableau public)</p>
+<p>Please view the interactive visualization on Tableau Public <a href="https://public.tableau.com/app/profile/qian.ziwei/viz/Mackover1/Dashboardoffinalgraph"><font color=grey><em>here</em>.</font></a></p>
 <h1 id="step-by-step-guide">4.0 Step-by-step Guide</h1>
 <table>
 <colgroup>
@@ -1645,6 +1647,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tbody>
 </table>
 <h1 id="derived-insights">5.0 Derived Insights</h1>
+<ol type="1">
+<li>In this six regions, Hongkong has the lowest imports and the second highest exports, and both of imports and exports amounts change relatively flat, with a slow upward trend. So the net exports of Hongkong is the highest. Hongkong has strong trade surplus and is in a favorable position in the foreign trade, but Hongkong may also face the problem of excessive external dependence.</li>
+</ol>
+<p><img src="img/img37.jpg" /> 2. In this six regions, the Mainland China has the highest imports and exports, but the lines of imports and exports are dramatic fluctuations. Most of the time, the Mainland China are in the trade surplus.</p>
+<ul>
+<li>Imports: The Mainland China imports curve has two points of sudden decline, one point is February 2019 and another is January 2020.
+<ul>
+<li>February 2019(from 6,217k to 4,037k): From the article called <a href="https://www.gelonghui.com/p/249791"><font color=grey><em>Commentary on February 2019 import and export data: the rhythm of the Spring Festival to resume work disrupts foreign trade data</em></font></a>, the reason of the sudden decline is the Chinese traditional festival–Spring Festival.</li>
+<li>January 2020(from 6,389k to 3,979k): The reason of the sudden decline is the COVID-19.</li>
+</ul></li>
+<li>Exports: The Mainland China exports curve has one point of sudden decline, the point is January 2020. The reason of the sudden decline is the COVID-19.</li>
+</ul>
+<p><img src="img/img38.jpg" /> 3. In these six regions, Taiwan imports curve continuously rising up to 4,912k and exports curve is stable at 2,000k with increasing trend from November 2020. But we can see that Taiwan is extremely trade deficit along with trend of increasing severity. By December 2020, trade deficit number is 2,374k.</p>
+<p><img src="img/img39.jpg" /> 4. In these six regions, the United States is the only region where changes in the imports and exports curves show an opposite trend. The imports curve shows an decreasing trend and the exports curve shows an increasing trend. So the United States is in the trade deficit before March 2020 and in the trade surplus after March 2020.</p>
+<p><img src="img/img40.jpg" /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

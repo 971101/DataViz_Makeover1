@@ -24,6 +24,7 @@ The original visualization can be seen below.
 ### 1.1 Clarity
 1. The title of the graph does not convey the intent of the graph well.
 
+    + The title indicates that it is the import and export value of six countries, but HongKong and Taiwan are not conutries.
     + In this case, the graph is trying to show changes in import and export amounts over time for six trading countries and compare them.
     + 'Top' included in the header, but ranking the total imports and exports in the source data(from 2019 to 2020), not exactly these six countries. 
     + The title does not indicate the unit of calculation of the import and export amount.
@@ -47,19 +48,20 @@ The proposed design is as follows.
 ![](img/img0_LI.jpg)
 
 ### 2.1 Clarity
-1. Delete the 'top' included in the title to avoid spreading the wrong information. 
-2. Title and subtitle show the objectives and explain abbreviations and definitions that will be used in the graph. 
-3. Add a new calculated field 'Net exports(exports-imports)' to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.
-4. Exports, imports, and net exports for the six countries have the same scale on the x-axis separately, making it easy to compare the data for the six countries.
-5. The units of the y-axis are uniform. All six countries use the data from Jan 2019 to Dec 2020.
+1. Replace countries with regions in the title.
+2. Delete the 'top' included in the title to avoid spreading the wrong information. 
+3. Title and subtitle show the objectives and explain abbreviations and definitions that will be used in the graph. 
+4. Add a new calculated field 'Net exports(exports-imports)' to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.
+5. Exports, imports, and net exports for the six regions have the same scale on the x-axis separately, making it easy to compare the data for the six countries.
+5. The units of the y-axis are uniform. All six regions use the data from Jan 2019 to Dec 2020.
 
 ### 2.2 Aesthetic
 1. Annotations are used to emphasize key observations. 
-2. Color is used to bring to attention different categories(different countries, trade surplus and trade deficit)
+2. Color is used to bring to attention different categories(different regions, trade surplus and trade deficit)
 3. Add data sources and explanation to help customers to read the graph.
 
 # 3.0 Proposed Visualization
-Please view the interactive visualization on Tableau Public here(link--tableau public)
+Please view the interactive visualization on Tableau Public [<font color=grey>*here*.</font>](https://public.tableau.com/app/profile/qian.ziwei/viz/Mackover1/Dashboardoffinalgraph)
 
 # 4.0 Step-by-step Guide
 No|Step      |Action
@@ -87,5 +89,21 @@ No|Step      |Action
 21|The final dashboard is ready!| ![](img/img35.PNG)
 
 # 5.0 Derived Insights
+1. In this six regions, Hongkong has the lowest imports and the second highest exports, and both of imports and exports amounts change relatively flat, with a slow upward trend. So the net exports of Hongkong is the highest. Hongkong has strong trade surplus and is in a favorable position in the foreign trade, but Hongkong may also face the problem of excessive external dependence.
 
+![](img/img37.jpg)
+2. In this six regions, the Mainland China has the highest imports and exports, but the lines of imports and exports are dramatic fluctuations. Most of the time, the Mainland China are in the trade surplus.
 
+* Imports: The Mainland China imports curve has two points of sudden decline, one point is February 2019 and another is January 2020.
+   * February 2019(from 6,217k to 4,037k): From the article called [<font color=grey>*Commentary on February 2019 import and export data: the rhythm of the Spring Festival to resume work disrupts foreign trade data*</font>](https://www.gelonghui.com/p/249791), the reason of the sudden decline is the Chinese traditional festival--Spring Festival.
+   * January 2020(from 6,389k to 3,979k): The reason of the sudden decline is the COVID-19.
+   
+* Exports: The Mainland China exports curve has one point of sudden decline, the point is January 2020. The reason of the sudden decline is the COVID-19.
+
+![](img/img38.jpg)
+3. In these six regions, Taiwan imports curve continuously rising up to 4,912k and exports curve is stable at 2,000k with increasing trend from November 2020. But we can see that Taiwan is extremely trade deficit along with trend of increasing severity. By December 2020, trade deficit number is 2,374k.
+
+![](img/img39.jpg)
+4. In these six regions, the United States is the only region where changes in the imports and exports curves show an opposite trend. The imports curve shows an decreasing trend and the exports curve shows an increasing trend. So the United States is in the trade deficit before March 2020 and in the trade surplus after March 2020.
+
+![](img/img40.jpg)
