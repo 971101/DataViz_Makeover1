@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/img0.jpg","img/img0_LI.jpg","img/img1.PNG","img/img10.PNG","img/img11.PNG","img/img12.PNG","img/img13.PNG","img/img14.PNG","img/img15.PNG","img/img16.PNG","img/img17.PNG","img/img19.PNG","img/img2.PNG","img/img20.PNG","img/img21.PNG","img/img22.PNG","img/img23.PNG","img/img24.PNG","img/img25.PNG","img/img26.PNG","img/img27.PNG","img/img3.PNG","img/img4.PNG","img/img5.PNG","img/img6.PNG","img/img7.PNG","img/img8.PNG","img/img9.PNG"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/img0.jpg","img/img0_LI.jpg","img/img1.PNG","img/img10.PNG","img/img11.PNG","img/img12.PNG","img/img13.PNG","img/img14.PNG","img/img15.PNG","img/img16.PNG","img/img17.PNG","img/img19.PNG","img/img2.PNG","img/img20.PNG","img/img21.PNG","img/img22.PNG","img/img23.PNG","img/img24.PNG","img/img25.PNG","img/img26.PNG","img/img27.PNG","img/img28.PNG","img/img29.png","img/img3.PNG","img/img30.PNG","img/img31.PNG","img/img32.PNG","img/img33.PNG","img/img34.PNG","img/img35.PNG","img/img4.PNG","img/img5.PNG","img/img6.PNG","img/img7.PNG","img/img8.PNG","img/img9.PNG"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1510,7 +1510,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ol type="1">
 <li>Delete the ‘top’ included in the title to avoid spreading the wrong information.</li>
 <li>Title and subtitle show the objectives and explain abbreviations and definitions that will be used in the graph.</li>
-<li>Add a new calculated field ‘Net exports(imports-exports)’ to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.</li>
+<li>Add a new calculated field ‘Net exports(exports-imports)’ to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.</li>
 <li>Exports, imports, and net exports for the six countries have the same scale on the x-axis separately, making it easy to compare the data for the six countries.</li>
 <li>The units of the y-axis are uniform. All six countries use the data from Jan 2019 to Dec 2020.</li>
 </ol>
@@ -1524,6 +1524,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>Please view the interactive visualization on Tableau Public here(link–tableau public)</p>
 <h1 id="step-by-step-guide">4.0 Step-by-step Guide</h1>
 <table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 45%" />
+<col style="width: 45%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>No</th>
@@ -1532,6 +1537,111 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td>1</td>
+<td>Select the import and export amounts of HongKong, Japan, Mainland China, Taiwan, Malaysia and United state from the source file.</td>
+<td>Show imports as a example <img src="img/img28.PNG" /></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Select the data from Jan 2019 to Dec 2020.</td>
+<td>Show imports as a example <img src="img/img28.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Compare the data of imports and exports and adjust the form.</td>
+<td>Show part of the document <img src="img/img30.PNG" /></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Import the data into Tableau.</td>
+<td><img src="img/img1.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Adjust the data type of variables.</td>
+<td><img src="img/img31.PNG" /></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Add the title and subtitle.</td>
+<td><img src="img/img23.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Add the caption.</td>
+<td><img src="img/img26.PNG" /></td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Right click on the blank area of <font color=blue><em>‘Data’</em></font> area. Create a new calculation field to show the changes in the balance.</td>
+<td><img src="img/img9.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>The new calculation field called <font color=blue><em>‘Net Exports’</em></font> which is equal to exports minus imports.</td>
+<td><img src="img/img10.PNG" /></td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Right click on the small triangle of <font color=blue><em>‘YEAR(Time)’</em></font> area.Put the <font color=blue><em>‘Time’</em></font> into the <strong>Columns</strong> and change the unit from <font color=blue><em>‘YEAR’</em></font> to <font color=blue><em>‘Month’</em></font>.</td>
+<td><img src="img/img4.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Put the <font color=blue><em>‘Country’</em></font> into the <strong>Columns</strong></td>
+<td><img src="img/img32.PNG" /></td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Put the <font color=blue><em>‘Imports(Thousand Dollars)’</em></font>,<font color=blue> <em>‘Exports(Thousand DOllars)’</em></font> and <font color=blue><em>‘Net exports’</em></font> into the <strong>Rows</strong>.</td>
+<td><img src="img/img33.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Right click on the small triangle of <font color=blue><em>‘CNTD’</em></font> area.Change the <strong>measure</strong> way of the <font color=blue><em>‘Imports(Thousand Dollars)’</em></font> and <font color=blue> <em>‘Exports(Thousand DOllars)’</em></font>.</td>
+<td><img src="img/img8.PNG" /></td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>Change the <strong>Marks</strong> of <font color=blue><em>‘SUM(Imports(Thousand Dollars))’</em></font>. Use <font color=blue><em>‘Country’</em></font> as <font color=blue><em>‘Color’</em></font> and <font color=blue><em>‘SUM(Imports(Thousand Dollars))’</em></font> as <font color=blue><em>‘Label’</em></font>.</td>
+<td><img src="img/img16.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>Change the <strong>Marks</strong> of <font color=blue><em>‘SUM(Exports(Thousand Dollars))’</em></font>. Use <font color=blue><em>‘Country’</em></font> as <font color=blue><em>‘Color’</em></font> and <font color=blue><em>‘SUM(Exports(Thousand Dollars))’</em></font> as <font color=blue><em>‘Label’</em></font>.</td>
+<td><img src="img/img20.PNG" /></td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>Change the <strong>Marks</strong> of <font color=blue><em>‘SUM(Net exports(Thousand Dollars))’</em></font>. Use <font color=blue><em>‘SUM(Net exports(Thousand Dollars))’</em></font> as <font color=blue><em>‘Color’</em></font> and <font color=blue><em>‘SUM(Net exports(Thousand Dollars))’</em></font> as <font color=blue><em>‘Label’</em></font>.</td>
+<td><img src="img/img21.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>Change the <font color=blue><em>‘Label’</em></font> format for aesthetic. Set the number with 0 decimal places and thousands unit.</td>
+<td><img src="img/img17.PNG" /></td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>Change the <font color=blue><em>‘Label’</em></font> display from show all to show only the maximum and minimum values.</td>
+<td><img src="img/img19.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>Change the <font color=blue><em>‘Color’</em></font> of <font color=blue><em>‘SUM(Net exports(Thousand Dollars))’</em></font>. The negative number is red and the positive is blue.</td>
+<td><img src="img/img22.PNG" /></td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>Right click on the main graph area or the important points and select annotate. Type in insights and observations in the text area. Arrange, resize, or format the resulting text box if required.</td>
+<td><img src="img/img34.PNG" /></td>
+</tr>
+<tr class="odd">
+<td>21</td>
+<td>The final dashboard is ready!</td>
+<td><img src="img/img35.PNG" /></td>
+</tr>
 </tbody>
 </table>
 <h1 id="derived-insights">5.0 Derived Insights</h1>

@@ -49,7 +49,7 @@ The proposed design is as follows.
 ### 2.1 Clarity
 1. Delete the 'top' included in the title to avoid spreading the wrong information. 
 2. Title and subtitle show the objectives and explain abbreviations and definitions that will be used in the graph. 
-3. Add a new calculated field 'Net exports(imports-exports)' to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.
+3. Add a new calculated field 'Net exports(exports-imports)' to show the changes in the balance. And add the caption to explain the calculation function of net exports, trade surplus and trade deficit.
 4. Exports, imports, and net exports for the six countries have the same scale on the x-axis separately, making it easy to compare the data for the six countries.
 5. The units of the y-axis are uniform. All six countries use the data from Jan 2019 to Dec 2020.
 
@@ -63,7 +63,29 @@ Please view the interactive visualization on Tableau Public here(link--tableau p
 
 # 4.0 Step-by-step Guide
 No|Step      |Action
---|----------|---------------------------------------
+--|----------|----------
+1|Select the import and export amounts of HongKong, Japan, Mainland China, Taiwan, Malaysia and United state from the source file.| Show imports as a example ![](img/img28.PNG) 
+2|Select the data from Jan 2019 to Dec 2020.|Show imports as a example ![](img/img28.PNG) 
+3|Compare the data of imports and exports and adjust the form.| Show part of the document ![](img/img30.PNG) 
+4|Import the data into Tableau.| ![](img/img1.PNG)
+5|Adjust the data type of variables.| ![](img/img31.PNG)
+6|Add the title and subtitle.| ![](img/img23.PNG)
+7|Add the caption.| ![](img/img26.PNG)
+8|Right click on the blank area of <font color=blue>*'Data'*</font> area. Create a new calculation field to show the changes in the balance.| ![](img/img9.PNG)
+9|The new calculation field called <font color=blue>*'Net Exports'*</font> which is equal to exports minus imports.| ![](img/img10.PNG) 
+10|Right click on the small triangle of <font color=blue>*'YEAR(Time)'*</font> area.Put the <font color=blue>*'Time'*</font> into the **Columns** and change the unit from <font color=blue>*'YEAR'*</font> to <font color=blue>*'Month'*</font>.| ![](img/img4.PNG)
+11|Put the <font color=blue>*'Country'*</font> into the **Columns**| ![](img/img32.PNG)
+12|Put the <font color=blue>*'Imports(Thousand Dollars)'*</font>,<font color=blue> *'Exports(Thousand DOllars)'*</font> and <font color=blue>*'Net exports'*</font> into the **Rows**.| ![](img/img33.PNG) 
+13|Right click on the small triangle of <font color=blue>*'CNTD'*</font> area.Change the **measure** way of the <font color=blue>*'Imports(Thousand Dollars)'*</font> and <font color=blue> *'Exports(Thousand DOllars)'*</font>.| ![](img/img8.PNG)
+14|Change the **Marks** of <font color=blue>*'SUM(Imports(Thousand Dollars))'*</font>. Use <font color=blue>*'Country'*</font> as <font color=blue>*'Color'*</font> and <font color=blue>*'SUM(Imports(Thousand Dollars))'*</font> as <font color=blue>*'Label'*</font>.| ![](img/img16.PNG)
+15|Change the **Marks** of <font color=blue>*'SUM(Exports(Thousand Dollars))'*</font>. Use <font color=blue>*'Country'*</font> as <font color=blue>*'Color'*</font> and <font color=blue>*'SUM(Exports(Thousand Dollars))'*</font> as <font color=blue>*'Label'*</font>.| ![](img/img20.PNG)
+16|Change the **Marks** of <font color=blue>*'SUM(Net exports(Thousand Dollars))'*</font>. Use <font color=blue>*'SUM(Net exports(Thousand Dollars))'*</font> as <font color=blue>*'Color'*</font> and <font color=blue>*'SUM(Net exports(Thousand Dollars))'*</font> as <font color=blue>*'Label'*</font>.| ![](img/img21.PNG)
+17|Change the  <font color=blue>*'Label'*</font> format for aesthetic. Set the number with 0 decimal places and thousands unit.| ![](img/img17.PNG)
+18|Change the <font color=blue>*'Label'*</font> display from show all to show only the maximum and minimum values.| ![](img/img19.PNG)
+19|Change the <font color=blue>*'Color'*</font> of <font color=blue>*'SUM(Net exports(Thousand Dollars))'*</font>. The negative number is red and the positive is blue.| ![](img/img22.PNG)
+20|Right click on the main graph area or the important points and select annotate. Type in insights and observations in the text area. Arrange, resize, or format the resulting text box if required.| ![](img/img34.PNG)
+21|The final dashboard is ready!| ![](img/img35.PNG)
+
 # 5.0 Derived Insights
 
 
