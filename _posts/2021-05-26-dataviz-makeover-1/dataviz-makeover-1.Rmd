@@ -27,16 +27,16 @@ The original visualization can be seen below.
 1. The title of the graph does not convey the intent of the graph well.
 
     + The title indicates that it is the import and export value of six countries, but HongKong and Taiwan are not conutries.
-    + In this case, the graph is trying to show changes in import and export amounts over time for six trading countries and compare them.
-    + 'Top' included in the header, but ranking the total imports and exports in the source data(from 2019 to 2020), not exactly these six countries. 
+    + In this case, the graph is trying to show changes in import and export amounts over time for six trading regions and compare them.
+    + 'Top' is included in the header, but ranking the total imports and exports in the source data(from 2019 to 2020), not exactly these six regions. 
     + The title does not indicate the unit of calculation of the import and export amount.
-    + The time indicated in the title and the time shown in the chart contradict each other. The title indicates that the chart shows the amount of import and export data from 2019 to 2020, but the graphs of Hong Kong, Mainland China, Malaysia, Taiwan and US show the amount from 2019-2021. And the graph of Japan show the amount of 2020 only.
+    + The time indicated in the title and the time shown in the chart contradict each other. The title indicates that the chart shows the amount of import and export data from 2019 to 2020, but the graph of Japan show the amount of 2020 only.
     
 2. The content of the graph
 
     + The area charts are used, which can mislead people into thinking that the areas are meant to show the cumulative imports and exports. However the main topic is to look at the yearly change of import and export amount and compare them.
     + Y-axis: the units of the y-axis are not uniform(between the six graphs and even for the export and import in the same graph) which is difficult to compare. This does not help to reflect the shortfall between imports and exports.
-    + X-axis: the ranges of x-axis of six countries are different. The range of x-axis of Hong Kong, Mainland China, Malaysia, Taiwan and US are from 2019-2021. And the time of Japan is 2020 only.
+    + X-axis: the ranges of x-axis of six regions are different. The range of x-axis of Hong Kong, Mainland China, Malaysia, Taiwan and US are from 2019-2021. And the time of Japan is 2020 only.
     
 ### 1.2 Aesthetic
 1. There is poor use of colors in the chart. The large number of overlapping blue and orange blocks in the chart can be confusing.
@@ -60,7 +60,7 @@ The proposed design is as follows.
 ### 2.2 Aesthetic
 1. Annotations are used to emphasize key observations. 
 2. Color is used to bring to attention different categories(different regions, trade surplus and trade deficit)
-3. Add data sources and explanation to help customers to read the graph.
+3. Add data sources and explanations to help customers to read the graph.
 
 # 3.0 Proposed Visualization
 Please view the interactive visualization on Tableau Public [<font color=grey>*here*.</font>](https://public.tableau.com/app/profile/qian.ziwei/viz/Mackover1/Dashboardoffinalgraph)
@@ -70,7 +70,7 @@ No|Step      |Action
 --|----------|----------
 1|Select the import and export amounts of HongKong, Japan, Mainland China, Taiwan, Malaysia and United state from the source file.| Show imports as a example ![](img/img28.PNG) 
 2|Select the data from Jan 2019 to Dec 2020.|Show imports as a example ![](img/img28.PNG) 
-3|Compare the data of imports and exports and adjust the form.| Show part of the document ![](img/img30.PNG) 
+3|Combine the data of imports and exports and adjust the form.| Show part of the document ![](img/img30.PNG) 
 4|Import the data into Tableau.| ![](img/img1.PNG)
 5|Adjust the data type of variables.| ![](img/img31.PNG)
 6|Add the title and subtitle.| ![](img/img23.PNG)
